@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grève pour la Paix</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
 
         .hero {
             background-image: url('hero.jpg');
@@ -26,12 +33,18 @@
         .hero::after {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
 
-        .hero h1, .hero p, .hero .btn, .hero .counter {
+        .hero h1,
+        .hero p,
+        .hero .btn,
+        .hero .counter {
             position: relative;
             z-index: 2;
         }
@@ -60,6 +73,10 @@
             display: inline-block;
         }
 
+        .btn:hover {
+            background: #C20000;
+        }
+
         .counter {
             margin-top: 30px;
             font-size: 1.1rem;
@@ -72,6 +89,15 @@
             color: #666;
             background: #f5f5f5;
         }
+
+        .footer a {
+            color: #0033A0;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -79,12 +105,14 @@
     <div class="hero">
         <h1>La justice n'est pas une option, c'est une obligation.</h1>
         <p>Rejoignez le mouvement français pour la paix et la justice en Palestine.</p>
-        <a href="#" class="btn">JE FAIS LA GRÈVE</a>
+        <a href="actualites.html" class="btn">JE FAIS LA GRÈVE</a>
         <p class="counter">✊ Déjà 5 234 citoyens mobilisés.</p>
     </div>
 
     <div class="footer">
         © 2026 Grève pour la Paix — Indépendant et apartisan.
+        <br>
+        <a href="actualites.html">Actualités</a>
     </div>
 
 </body>
