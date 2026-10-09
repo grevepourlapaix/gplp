@@ -5,98 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualités — Grève pour la Paix</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: Arial, sans-serif;
-            background: #f9f9f9;
+            background-image: url('greverue.jpg');
+            background-size: cover;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Dark overlay so text is readable */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
         }
 
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
+            position: relative;
+            z-index: 1;
         }
 
         .header {
             text-align: center;
             margin-bottom: 40px;
         }
-
         .header h1 {
-            color: #0033A0;
+            color: white;
             font-size: 2.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
         }
-
         .header .sub {
-            color: #666;
+            color: #f0f0f0;
             font-size: 1.1rem;
             margin-top: 10px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
 
         .post {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 8px;
             padding: 25px 30px;
             margin-bottom: 25px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
             border-left: 4px solid #E30000;
         }
-
-        .post h2 {
-            color: #0033A0;
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-        }
-
-        .post .date {
-            color: #999;
-            font-size: 0.85rem;
-            margin-bottom: 12px;
-        }
-
-        .post p {
-            color: #333;
-            line-height: 1.6;
-        }
+        .post h2 { color: #0033A0; font-size: 1.5rem; margin-bottom: 8px; }
+        .post .date { color: #999; font-size: 0.85rem; margin-bottom: 12px; }
+        .post p { color: #333; line-height: 1.6; margin-bottom: 12px; }
+        .post ul { margin: 12px 0 12px 25px; color: #333; line-height: 1.8; }
+        .post strong { color: #0033A0; }
 
         .back {
             display: inline-block;
             margin-top: 30px;
-            color: #0033A0;
+            color: white;
             text-decoration: none;
             font-weight: bold;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
-
-        .back:hover {
-            text-decoration: underline;
-        }
+        .back:hover { text-decoration: underline; }
 
         .footer {
             text-align: center;
             padding: 30px 20px 20px;
             font-size: 0.9rem;
-            color: #666;
-            border-top: 1px solid #ddd;
+            color: #f0f0f0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
             margin-top: 20px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
         }
+        .footer a { color: white; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
 
-        .footer a {
-            color: #0033A0;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8rem; }
+            .post { padding: 20px; }
         }
     </style>
 </head>
 <body>
-
     <div class="container">
 
         <div class="header">
@@ -106,30 +102,42 @@
 
         <!-- POST 1 -->
         <div class="post">
-            <h2>Premier rassemblement à Paris</h2>
-            <p class="date">1 septembre 2026</p>
-            <p>Notre mouvement a organisé son premier rassemblement place de la République. Plus de 5 000 personnes ont manifesté pour la paix en Palestine. Un succès qui marque le début d'une mobilisation citoyenne durable.</p>
+            <h2>Appel à la grève internationale pour la Palestine</h2>
+            <p class="date">9 octobre 2026</p>
+            <p>Nous appelons tous les citoyens à participer à une grève internationale pour la Palestine. La grève, c'est <strong>VOUS</strong> — qui que vous soyez et où que vous soyez. Employé ou sans emploi.</p>
+            <p><strong>Faîtes ce que vous pouvez :</strong></p>
+            <ul>
+                <li>Pas d'achats — n'achetez rien !</li>
+                <li>Ne travaillez pas</li>
+                <li>Pas d'école / collège / université</li>
+                <li>Rassemblements et manifestations locales</li>
+            </ul>
+            <p><strong>Faîtes au moins une option.</strong> Nous sommes au-delà de l'urgence.</p>
         </div>
 
         <!-- POST 2 -->
         <div class="post">
-            <h2>Appel à la grève citoyenne</h2>
-            <p class="date">15 août 2026</p>
-            <p>Nous appelons tous les citoyens à faire grève le 1er octobre pour exiger un cessez-le-feu immédiat à Gaza. Rejoignez-nous dans les rues de Paris, Lyon, Marseille et Bordeaux.</p>
+            <h2>Dates de la grève — 30 octobre et 20 novembre 2026</h2>
+            <p class="date">9 octobre 2026</p>
+            <p><strong>Vendredi 30 octobre</strong><br>
+            <strong>Vendredi 20 novembre '26</strong><br>
+            <strong>Partout et n'importe où !</strong></p>
+            <p>Un nettoyage ethnique — intentionnel — a lieu en Palestine. Les grèves n'incluent pas les travailleurs d'urgence et essentiels.</p>
+            <p>Rejoignez le mouvement. Mobilisez-vous près de chez vous.</p>
         </div>
 
         <!-- POST 3 -->
         <div class="post">
-            <h2>La France, 2e fournisseur d'armes d'Israël</h2>
-            <p class="date">28 juillet 2026</p>
-            <p>Un nouveau rapport confirme que la France reste le 2e fournisseur d'armes d'Israël en Europe. Nous exigeons la transparence et l'arrêt immédiat des livraisons d'armes.</p>
-        </div>
-
-        <!-- POST 4 -->
-        <div class="post">
-            <h2>Prochaine action : Paris, 15 octobre</h2>
-            <p class="date">20 août 2026</p>
-            <p>Une nouvelle journée de mobilisation est prévue le 15 octobre à Paris. Nous marcherons de la place de la République à la place de la Bastille. Préparez vos banderoles et vos drapeaux.</p>
+            <h2>Pourquoi nous faisons grève</h2>
+            <p class="date">9 octobre 2026</p>
+            <p>La justice n'est pas une option, c'est une obligation. La France est le 2e fournisseur d'armes d'Israël en Europe. Le silence n'est pas une option.</p>
+            <p>Nous ne sommes ni pro-Hamas ni anti-Israël. Nous sommes pro-humanité. Le droit international est bafoué.</p>
+            <p><strong>Rejoignez-nous :</strong></p>
+            <ul>
+                <li>📚 Étudiants — Occupez vos facultés</li>
+                <li>🏭 Travailleurs — Débrayage à 12h</li>
+                <li>🛍️ Boycott — Ne consommez pas le génocide</li>
+            </ul>
         </div>
 
         <a href="index.html" class="back">← Retour à l'accueil</a>
@@ -141,6 +149,5 @@
         </div>
 
     </div>
-
 </body>
 </html>
